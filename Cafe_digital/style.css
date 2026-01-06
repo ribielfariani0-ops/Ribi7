@@ -1,0 +1,198 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+/* HERO / HEADER */
+header {
+  background:
+      linear-gradient(rgba(30, 20, 18, 0.75), rgba(30, 20, 18, 0.75)),
+      url("images/Aesthetic.jpg")
+      center / cover no-repeat;
+  color: #ffffff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* JUDUL */
+header h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* TAGLINE */
+.tagline {
+  display: block;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #f5e6d3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* DESKRIPSI */
+header p {
+  font-size: 18px;
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+
+/* NAVIGATION */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #2e1c18;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ABOUT + VISION MISSION */
+.about-vision {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.about-vision .card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Background selang-seling */
+#about,
+#menu,
+#contact {
+  background-color: #ffffff;
+}
+
+#vision,
+#facilities {
+  background-color: #f7f2ef;
+}
+
+/* JUDUL */
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #3e2723;
+}
+
+/* TEXT */
+.center-text {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* GRID */
+.vision-mission,
+.menu,
+.facilities,
+.contact-location {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card,
+.menu div,
+.facilities div {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover,
+.menu div:hover,
+.facilities div:hover {
+  transform: translateY(-5px);
+}
+
+.card h3,
+.menu h4,
+.facilities h4 {
+  margin-top: 0;
+  color: #3e2723;
+}
+
+/* CONTACT */
+.contact-location p {
+  margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(120deg, #3e2723, #2e1c18);
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* QUICK STATS (3 ANGKA) */
+.quick-stats {
+  margin: 60px auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+
+.stat-item {
+  background: linear-gradient(135deg, #3e2723, #5d4037);
+  color: #ffffff;
+  padding: 35px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-item h3 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.stat-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
